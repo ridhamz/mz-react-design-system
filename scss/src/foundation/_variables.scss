@@ -67,8 +67,8 @@ $blue-light: #b4d2f4;
 
 /* Font families */
 
-$playfair: 'Playfair Display', serif; /* 1 */
-$raleway: 'Raleway', 'HelveticaNeue', 'Helvetica', sans-serif; /* 2 */
+$playfair: "Playfair Display", serif; /* 1 */
+$raleway: "Raleway", "HelveticaNeue", "Helvetica", sans-serif; /* 2 */
 
 /* Font sizes */
 $fs-xs: 0.75rem; // 12px
@@ -147,7 +147,7 @@ $spacing: (
 ) !default;
 
 $shadows: (
-  base: 0px 4px 11px rgba(157, 157, 157, 0.21),
+  base: 0 4px 11px rgba(157, 157, 157, 0.21),
 );
 
 /*=====  End of Spacing  ======*/
