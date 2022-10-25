@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "stylelint ./**/*.scss ",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "build": "node src/scripts/build.js"
   },
   "husky": {
     "hooks": {
@@ -21,8 +22,10 @@
   "dependencies": {
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "node-sass": "^7.0.3",
     "normalize-scss": "^7.0.1",
     "prettier": "^2.7.1",
+    "sass": "^1.55.0",
     "stylelint": "^14.14.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-sass-guidelines": "^9.0.1",
