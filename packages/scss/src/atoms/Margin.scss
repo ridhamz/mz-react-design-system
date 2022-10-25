@@ -1,0 +1,15 @@
+@import 'src/foundation/all';
+
+$sides: left, right, top, bottom;
+
+@each $space, $value in $spacing {
+  .mz-margin-#{$space} {
+    margin: $value;
+  }
+
+  @each $side in $sides {
+    .mz-margin-#{$side}-#{$space} {
+      margin-#{$side}: $value;
+    }
+  }
+}

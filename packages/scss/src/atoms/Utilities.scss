@@ -1,0 +1,11 @@
+@import 'src/foundation/all';
+
+@each $size, $value in $spacing {
+  .mz-width-#{$size} {
+    width: $value;
+  }
+
+  .mz-height-#{$size} {
+    height: $value;
+  }
+}

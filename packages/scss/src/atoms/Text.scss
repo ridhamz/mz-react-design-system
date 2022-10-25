@@ -1,0 +1,11 @@
+@import 'src/foundation/all';
+
+.mz-text {
+  margin: 0;
+}
+
+@each $size, $value in $fs {
+  .mz-text-#{$size} {
+    font-size: $value;
+  }
+}
