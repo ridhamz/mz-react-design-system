@@ -1,0 +1,17 @@
+{
+  "name": "@mz-ds/foundation",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "lib"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npm run build ",
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

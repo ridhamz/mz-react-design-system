@@ -1,31 +1,33 @@
 {
-  "name": "mz-react-design-system",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "npx lerna run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ridhamz/mz-react-design-system.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ridhamz/mz-react-design-system/issues"
-  },
-  "homepage": "https://github.com/ridhamz/mz-react-design-system#readme",
-  "dependencies": {
-    "lerna": "^6.0.1"
-  },
+  "name": "root",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ],
-    "nohoist": [
-      "**/normalize-scss"
-    ]
+  "workspaces": [
+    "packages/*",
+    "playgrounds/*"
+  ],
+  "nohoist": [
+    "**/normalize-scss"
+  ],
+  "scripts": {
+    "build": "npx lerna run build",
+    "dev": "npx lerna run dev",
+    "test": "npx lerna run test",
+    "publish": "npx test && npx build && npx lerna publish",
+    "commit": "npx git-cz",
+    "test:chromatic": "npx lerna run test:chromatic",
+    "build:storybook": "npx build && npx lerna run build-storybook"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "lerna": "^6.0.1"
   }
 }

@@ -1,5 +1,7 @@
 {
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "version": "0.1.3",
   "npmClient": "npm",
   "useWorkspaces": true,
@@ -8,5 +10,6 @@
     "publish": {
       "conventionalCommits": true
     }
-  }
+  },
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }

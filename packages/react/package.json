@@ -1,11 +1,12 @@
 {
-  "name": "react",
+  "name": "@mz-ds/react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "types": "module",
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs"
+    "build": "rollup -c --bundleConfigAsCjs",
+    "dev" : "npm run build --watch"
   },
   "keywords": [],
   "author": "",
