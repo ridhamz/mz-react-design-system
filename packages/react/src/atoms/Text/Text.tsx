@@ -3,6 +3,7 @@ import { FontSize } from '@mz-ds/foundation/lib';
 
 export interface TextProps {
   size?: keyof typeof FontSize;
+  children?: React.ReactNode;
 }
 
 const Text: React.FC<TextProps> = ({ size = FontSize.base, children }) => {

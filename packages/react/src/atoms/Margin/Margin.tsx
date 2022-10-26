@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Spacing } from '@mz-ds/foundation/lib';
 
 export interface MarginProps {
@@ -7,7 +7,7 @@ export interface MarginProps {
   right?: boolean;
   top?: boolean;
   bottom?: boolean;
-  children?: React.FC;
+  children?: ReactNode;
 }
 
 const Margin: React.FC<MarginProps> = ({
