@@ -2,11 +2,34 @@ import React from 'react';
 
 import ReactDOM from 'react-dom';
 
-import { Button } from '@mz-ds/react/lib';
+import { Select } from '@mz-ds/react/lib';
 
-import '@mz-ds/scss/lib/button.css';
+import '@mz-ds/scss/lib/Utilities.css';
+import '@mz-ds/scss/lib/Text.css';
+import '@mz-ds/scss/lib/Margin.css';
+import '@mz-ds/scss/lib/Select.css';
+import '@mz-ds/scss/lib/global.css';
+
+const options = [
+  {
+    label: 'Strict Black',
+    value: 'strict-black',
+  },
+  {
+    label: 'Heavenly Green',
+    value: 'heavenly-green',
+  },
+  {
+    label: 'Sweet Pink',
+    value: 'pink',
+  },
+];
 
 ReactDOM.render(
-  <Button label="Example Button" />,
+  <div style={{ padding: '40px' }}>
+    <Select options={options} />
+  </div>,
   document.querySelector('#root')
 );
+
+// <Select label='Please select a size' onOptionSelected={console.log} options={[{ label: '', value: '' }]} />
