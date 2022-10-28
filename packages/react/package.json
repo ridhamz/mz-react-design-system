@@ -6,12 +6,13 @@
   "types": "module",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
-    "dev" : "npm run build --watch"
+    "dev": "npm run build --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.23",
     "react": "^18.2.0",
     "rollup": "^3.2.3",
