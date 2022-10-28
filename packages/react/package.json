@@ -8,12 +8,16 @@
     "build": "rollup -c --bundleConfigAsCjs",
     "dev": "npm run build --watch",
     "test": "jest --verbose",
-    "test:watch": "npm run test --watch"
+    "test:watch": "npm run test --watch",
+    "start-storybook": " start-storybook",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^6.5.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.23",
