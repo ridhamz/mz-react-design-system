@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
   "scripts": {
     "lint": "stylelint ./**/*.scss ",
     "lint:fix": "npm run lint -- --fix",
