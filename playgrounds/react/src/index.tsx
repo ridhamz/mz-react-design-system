@@ -2,7 +2,7 @@ import React from 'react';
 
 import ReactDOM from 'react-dom';
 
-import { Select } from '@mz-ds/react/lib';
+import { Color, Margin, Select, Text } from '@mz-ds/react/lib';
 
 import '@mz-ds/scss/lib/Utilities.css';
 import '@mz-ds/scss/lib/Text.css';
@@ -27,7 +27,10 @@ const options = [
 
 ReactDOM.render(
   <div style={{ padding: '40px' }}>
-    <Select options={options} />
+    <Margin>
+      <Color hexCode="red" height={'xl'} width={'xl'} />
+      <Text size={'lg'}>This is text</Text>
+    </Margin>
   </div>,
   document.querySelector('#root')
 );
