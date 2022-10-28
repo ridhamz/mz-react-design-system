@@ -1,9 +1,9 @@
 import React from 'react';
 import Select from './Select';
-import { withA11Y } from '@storybook/addon-a11y';
+import withA11Y from '@storybook/addon-a11y';
 
 // css
-import '@ds.e/scss/lib/Select.css';
+import '@mz-ds/scss/lib/Select.css';
 
 const options = [
   {
