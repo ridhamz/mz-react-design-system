@@ -11,6 +11,12 @@
     "dev": "npm run build ",
     "test": "jest --verbose"
   },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"

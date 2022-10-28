@@ -6,7 +6,9 @@
   "types": "module",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
-    "dev": "npm run build --watch"
+    "dev": "npm run build --watch",
+    "test": "jest --verbose",
+    "test:watch": "npm run test --watch"
   },
   "keywords": [],
   "author": "",
